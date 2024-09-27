@@ -54,8 +54,7 @@ public class CameraHandler : MonoBehaviour
     private void FollowPlayer(float delta)
     {
         Vector3 targetDirection = Vector3.Lerp(this.transform.position, playerTransform.position, FollowSpeed * delta); 
-        // google it (what is the difference between dividing and multiplying delta time)
-        transform.position = targetDirection;
+         transform.position = targetDirection;
     }
 
     void HeadToTarget()
