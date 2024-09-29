@@ -68,7 +68,7 @@ public class CombatHandler : MonoBehaviour
         if (!inputHandler.isBlocking)
             GuardCounter = 0;
 
-        Hitable = animatorHandler.animator.GetBool("CanGetDamage");
+        Hitable = animatorHandler.animator.GetBool("CanGetDamaged");
         animatorHandler.animator.SetInteger("comboCounter", comboCounter);
         Attack();
         Blocking();
